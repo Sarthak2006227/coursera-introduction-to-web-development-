@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #003366;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #0055aa;
+  border-radius: 4px;
+  outline: none;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+#about-me {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#projects article {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#projects figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#skills ul {
+  padding-left: 20px;
+}
+
+#skills li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+#skills li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #003366;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #0055aa;
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 0.9em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projects {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
